@@ -1,9 +1,3 @@
-.image {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-}
-
 .articleContent {
   margin: 16px 0;
   padding: 16px;
@@ -94,6 +88,19 @@
   height: auto;
   border-radius: 8px;
 }
+
+/* @media (min-width: 768px) {
+  .articleContent img {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articleContent img {
+    max-width: 100%;
+  }
+} */
+
 
 .articleContent table {
   width: 100%;
