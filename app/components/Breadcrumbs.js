@@ -18,7 +18,7 @@ const Breadcrumbs = ({ category, articleTitle }) => {
   const categoryName = getCategoryName(category);
 
   return (
-    <nav className="bg-gray-100 p-3 rounded">
+    <nav className="bg-gray-100 p-3 rounded text-xs sm:text-sm md:text-lg">
       <ol className="list-reset flex text-grey-dark">
         <li>
           <Link href="/" className="text-blue-600 hover:text-blue-700">ホーム</Link>
