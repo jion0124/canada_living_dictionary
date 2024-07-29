@@ -3,6 +3,7 @@ import Image from 'next/image';
 import LinkButton from './components/LinkButton';
 import SnsArea from './components/SnsArea';
 import PhotoButton from './components/PhotoButton';
+import AboutUs from './components/AboutUs';
 
 export const revalidate = 60;
 
@@ -12,7 +13,7 @@ async function Home() {
     <main>
     <div className="py-6">
 
-    <div className="mx-4 sm:mx-auto bg-white shadow-lg rounded-lg overflow-hidden max-w-2xl text-center border border-red-500">
+    <div className="mx-4 md:mx-auto bg-white shadow-lg rounded-lg overflow-hidden max-w-2xl text-center border border-red-500">
       <div className="p-4">
         <div className='image_container'>
           <Image
@@ -21,6 +22,8 @@ async function Home() {
             width={300}
             height={50}
             className="max-w-xs sm:max-w-md"
+            style={{ width: 'auto', height: 'auto' }}
+            priority
           />
         </div>
         <div className="flex justify-center">
@@ -39,7 +42,7 @@ async function Home() {
     <SnsArea />
 
     <div className="container mx-auto p-1">
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-1">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-1 fade-in-up">
         <PhotoButton 
           href="./category/living" 
           src="/images/living.png"
@@ -73,6 +76,8 @@ async function Home() {
       </div>
      </div>
     </div>
+
+    <AboutUs />
     </main>
   );
 }
